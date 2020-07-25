@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Parse Assignment</title>
+    <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/datatables/css/dataTables.bootstrap.min.css')?>" rel="stylesheet">
+   
+    </head> 
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<body>
+    <div class="container center" >
+        <h1 style="font-size:20pt">Website Parse Assignment</h1>
+
+        <br>
+
+           <a class="btn btn-success" href="<?=base_url()?>website_parse/parse" target='_blank'  role="button">Parse from Website</a>
+	   <a class="btn btn-primary" href="<?=base_url()?>website_parse/company_category" target='_blank' role="button">View Parsed Data</a>
+	   <!--a class="btn btn-primary" href="<?=base_url()?>/website_parse/company_list" target='_blank' role="button">Company List</a>
+	    <a class="btn btn-primary" href="<?=base_url()?>/website_parse/company_details" target='_blank' role="button">Company Details</a-->
+
+
+    </div>
+
+<script src="<?php echo base_url('assets/jquery/jquery-2.2.3.min.js')?>"></script>
+<script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('assets/datatables/js/jquery.dataTables.min.js')?>"></script>
+<script src="<?php echo base_url('assets/datatables/js/dataTables.bootstrap.min.js')?>"></script>
+
+
+
+</body>
+</html>
